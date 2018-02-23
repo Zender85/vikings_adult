@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>#1 ADULT GAME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="./index_files/main.css">
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="./index_files/jquery.js"></script>
+    <script src="./index_files/swfobject.js" type="text/javascript"></script>
+    <script>
+    function getURLParameter(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+    var ft = getURLParameter('ft');
+    if (!ft) { ft = 'main' };
+    var cpi = getURLParameter('campaign.id');
+    if (!cpi) { cpi = '0' };
+    var ci = getURLParameter('clickid');
+    if (!ci) { ci = '0' };
+    var sd = getURLParameter('sd');
+    if (!sd) { sd = '0' };
+    var vc = getURLParameter('vc');
+    if (!vc) { vc = '0' };
+    var av = getURLParameter('av');
+    if (!av) { av = '01' };
+    var bg = getURLParameter('bg');
+    if (!bg) { bg = '01' };
+    var fg = getURLParameter('fg');
+    if (!fg) { fg = '01' };
+    var lo = getURLParameter('lo');
+    if (!lo) { lo = 'loa2' };
+    var lg = getURLParameter('lg');
+    if (!lg) { lg = 'en' };
+    var st = getURLParameter('st');
+    if (!st) { st = 'red' };
+    var mp = getURLParameter('mp');
+    if (!mp) { mp = '01' };
+    var wi = getURLParameter('wi');
+    if (!wi) { wi = '1080' };
+    var set = getURLParameter('set');
+    if (!set) { set = 'main' };
+    var mo = getURLParameter('mo');
+    var ex = getURLParameter('ex');
+
+    var sheet = document.createElement('style');
+    sheet.innerHTML = 'body { background: #000 url(img/bg/01.jpg) 0% 0%/cover no-repeat;}' +
+        '.page__wrap { width:' + wi + 'px;}'
+    document.head.appendChild(sheet);
+
+
+
+
+    $(document).ready(function() {
+
+        $("#female a").click(function() {
+            $('#step1').animate({ opacity: 0 }, 2000);
+            $("#step1").hide();
+            $('body').css('backgroundImage', 'url(index_files/02.jpg)');
+            $("#step3").show();
+            $('#step3').animate({ opacity: 1 }, 2000);
+
+
+        });
+        $("#age a").click(function() {
+            $('#step2').animate({ opacity: 0 }, 2000);
+            $("#step2").hide();
+            $('#step3').animate({ opacity: 0 }, 2000);
+            $("#step3").hide();
+            $('body').css('backgroundImage', 'url(index_files/03.jpg)');
+            $("#step4").show();
+            $('#step4').animate({ opacity: 1 }, 2000);
+
+        });
+
+
+    });
+    </script>
+    <style>
+    body {
+        background: #000 url(index_files/01.jpg) 0% 0%/cover no-repeat;
+    }
+
+    .page__wrap {
+        width: 1080px;
+    }
+    </style>
+    <style>
+    body {
+        background: #000 url(index_files/01.jpg) 0% 0%/cover no-repeat;
+    }
+
+    .page__wrap {
+        width: 1080px;
+    }
+    </style>
+    <style type="text/css" media="screen">
+    #bg {
+        visibility: hidden
+    }
+    </style>
+    <style type="text/css" media="screen">
+    #bg {
+        visibility: hidden
+    }
+    </style>
+</head>
+
+<body class="">
+    <a href="http://google.com/" style="opacity:0;line-height:1px;font-size:1px;height:1px;display:inherit;">Click</a>
+    <audio autoplay="">
+        <source src="index_files/main.mp3" type="audio/mp3">
+    </audio>
+    <div class="is-loading">
+        <div id="wrapper">
+            <!-- Main -->
+            <section class="main">
+                <div>
+                    <div id="step1">
+                        <div class="gender"><img src="./index_files/en.png">
+                        </div>
+                        <div class="btn_wrp">
+                            <div class="inner">
+                                <div id="female" class="btn">
+                                    <a href="#">
+                                        <script>
+                                        document.write("<img src=\"index_files/"+lg+"_male.png\"   onmouseover=\"this.src='index_files/'+lg+'_male_over.png'\"  onmouseout=\"this.src='index_files/'+lg+'_male.png'\"/>")
+                                        </script></a>
+                                </div>
+                                <div id="female" class="btn">
+                                    <a href="#">
+                                        <script>
+                                        document.write("<img src=\"index_files/"+lg+"_female.png\"   onmouseover=\"this.src='index_files/'+lg+'_female_over.png'\"  onmouseout=\"this.src='index_files/'+lg+'_female.png'\"/>")
+                                        </script></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="step3">
+                        <div class="gender">
+                            <img src="./index_files/en(1).png">
+                        </div>
+                        <div class="btn_wrp">
+                            <div class="inner">
+                                <div id="age" class="btn"><a href="#"><img src="./index_files/en_female1.png" onmouseover="this.src='index_files/en_female1_over.png'" onmouseout="this.src='index_files/en_female1.png'"></a></div>
+                                <div id="age" class="btn"><a href="#"><img src="./index_files/en_female2.png" onmouseover="this.src='index_files/en_female2_over.png'" onmouseout="this.src='index_files/en_female2.png'"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="step4">
+                        <div class="gender">
+                            <img src="./index_files/en(2).png">
+                        </div>
+                        <div class="btn_wrp">
+                            <div class="inner">
+                                <div id="male" class="btn_full">
+                                    <a href="#">
+                                        <img src="./index_files/en_age.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+    <script>
+    if ('addEventListener' in window) {
+        window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+        document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+    }
+    </script>
+    <!-- <script>
+    if (swfobject.hasFlashPlayerVersion("1")) {
+        document.write('<object type="application/x-shockwave-flash" id="bg" name="bg" wmode="transparent" menu="false" data="bg.swf" width="100%" height="100%" style="visibility: visible;"><param name="id" value="bg"><param name="name" value="bg"><param name="wmode" value="transparent"><param name="menu" value="false"><param name="flashvars" value="myFile=bg.swf&amp;myFileType=flash&amp;loadEffect=Fade"></object><param name="id" value="bg"><param name="name" value="bg"><param name="wmode" value="transparent"><param name="menu" value="false"><param name="flashvars" value="myFile=bg.swf&amp;myFileType=flash&amp;loadEffect=Fade"></object>');
+    }
+    </script> -->
+    <object type="application/x-shockwave-flash" id="bg" name="bg" wmode="transparent" menu="false" data="./index_files/bg.swf" width="100%" height="100%" style="visibility: visible;">
+        <param name="id" value="bg">
+        <param name="name" value="bg">
+        <param name="wmode" value="transparent">
+        <param name="menu" value="false">
+        <param name="flashvars" value="myFile=bg.swf&amp;myFileType=flash&amp;loadEffect=Fade">
+    </object>
+    <param name="id" value="bg">
+    <param name="name" value="bg">
+    <param name="wmode" value="transparent">
+    <param name="menu" value="false">
+    <param name="flashvars" value="myFile=bg.swf&amp;myFileType=flash&amp;loadEffect=Fade">
+    <div id="bg" style="visibility: visible;"></div>
+    <script type="text/javascript">
+    var flashvars = {
+        myFile: "bg.swf", //set the file URL that flash will load
+        myFileType: "flash", //set filetype (values: image, flash)
+        loadEffect: "Fade" //set load effect - options: "Fade", "Wipe", "Iris", "PixelDissolve", "Photo"
+    };
+    var params = {
+        id: "bg",
+        name: "bg",
+        wmode: "transparent",
+        menu: "false"
+    };
+    var attributes = {
+        id: "bg",
+        name: "bg",
+        wmode: "transparent",
+        menu: "false"
+    };
+
+    swfobject.embedSWF("bg.swf", "bg", "100%", "100%", "10.0.45.2", "expressInstall.swf", flashvars, params, attributes);
+    </script>
+</body>
+
+</html>
